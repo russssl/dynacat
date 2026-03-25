@@ -1,7 +1,6 @@
 package dynacat
 
 import (
-	"bytes"
 	"context"
 	"encoding/json"
 	"errors"
@@ -305,7 +304,7 @@ func (widget *torrentingWidget) delugeLogin(ctx context.Context, host *Torrentin
 		return err
 	}
 
-	req, err := http.NewRequestWithContext(ctx, "POST", loginURL, bytes.NewReader(payload))
+	req, err := http.NewRequestWithContext(ctx, "POST", loginURL, strings.NewReader(string(payload)))
 	if err != nil {
 		return err
 	}
@@ -414,7 +413,7 @@ func (widget *torrentingWidget) fetchDelugeTorrentsOnce(ctx context.Context, hos
 		return nil, err
 	}
 
-	req, err := http.NewRequestWithContext(ctx, "POST", apiURL, bytes.NewReader(reqBody))
+	req, err := http.NewRequestWithContext(ctx, "POST", apiURL, strings.NewReader(string(reqBody)))
 	if err != nil {
 		return nil, err
 	}
