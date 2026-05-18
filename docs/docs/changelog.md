@@ -8,6 +8,7 @@
 - Fixed issue where qBittorrent would incorrectly detect current state when seeding 
 - Fixed issue where page doesnt load correctly on browser reload
 - Fixed issue where key-binding only works when there are search widgets
+- Fixed issue where server-stats disk usage were shown incorrectly -> https://github.com/Panonim/dynacat/issues/89
 
 # Changes for 2.2.3
 - Add utility functions for array manipulation -> https://github.com/Panonim/dynacat/pull/60
