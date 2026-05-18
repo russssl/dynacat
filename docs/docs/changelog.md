@@ -10,6 +10,10 @@
 - Fixed issue where key-binding only works when there are search widgets
 - Fixed issue where server-stats disk usage were shown incorrectly -> https://github.com/Panonim/dynacat/issues/89
 - Fixed issue where grouped tabs would reset after refresh -> https://github.com/Panonim/dynacat/issues/93
+- Added ability to have navbar hidden on desktop, show it on hover (hover height area 22px) -> https://github.com/Panonim/dynacat/pull/91
+- Added ability to center nav-item elements on navbar on desktop -> https://github.com/Panonim/dynacat/pull/91
+- Added ability to hide logo from navbar -> https://github.com/Panonim/dynacat/pull/91
+- Fixed rendering user svg from branding correctly -> https://github.com/Panonim/dynacat/pull/91
 
 # Changes for 2.2.3
 - Add utility functions for array manipulation -> https://github.com/Panonim/dynacat/pull/60
